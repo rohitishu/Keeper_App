@@ -1,4 +1,5 @@
 import React from "react";
+import DeleteIcon from "@material-ui/icons/Delete";
 
 function Notes(props) {
   function onsubmit() {
@@ -8,7 +9,10 @@ function Notes(props) {
     <div class="note">
       <h1> {props.title} </h1>
       <p> {props.content} </p>
-      <button onClick={onsubmit}> DELETE </button>
+      <button onClick={onsubmit}>
+        {" "}
+        <DeleteIcon />{" "}
+      </button>
     </div>
   );
 }
